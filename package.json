@@ -1,0 +1,32 @@
+{
+  "name": "reactive-event-backend",
+  "version": "1.0.0",
+  "description": "A non-blocking reactive backend prototype using Publisher-Subscriber event streams.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test test/*.test.js",
+    "demo:seed": "node scripts/seed-events.js",
+    "demo:load": "node scripts/load-test.js",
+    "demo:curl": "sh scripts/demo-curl.sh"
+  },
+  "keywords": [
+    "reactive",
+    "rxjs",
+    "publisher-subscriber",
+    "non-blocking",
+    "backpressure",
+    "fastify"
+  ],
+  "author": "Advanced Programming Student Team",
+  "license": "MIT",
+  "dependencies": {
+    "fastify": "^5.6.1",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "autocannon": "^8.0.0"
+  }
+}
