@@ -93,11 +93,3 @@ Each endpoint is implemented around RxJS Observables. Events are published throu
 ## Backpressure Strategy
 
 The function `writeObservableAsNdjson` writes each Observable emission to the HTTP response. If `response.write()` returns `false`, the writer awaits the `drain` event before processing more data. This prevents the server from flooding slow clients and proves that the stream respects subscriber capacity.
-
-## Source Code Access
-
-Repository URL:
-
-```text
-Replace this line with your GitHub or GitLab URL after pushing the project.
-```
